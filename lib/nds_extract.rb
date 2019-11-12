@@ -18,7 +18,7 @@ def directors_totals(nds)
   # and total up all the
   outer_index = 0 
   directors_total = {}
-  while outer_index <nds.length do
+  while outer_index < nds.length do
     inner_index = 0 
     total = 0
     while inner_index < nds[outer_index][:movie].length do
@@ -26,7 +26,7 @@ def directors_totals(nds)
       total += money
       inner_index += 1 
     end
-    directors_total[nds[:name]] = total
+    directors_total[nds[outer_index][:name]] = total
     outer_index +=1
   end
   # Be sure to return the result at the end!
